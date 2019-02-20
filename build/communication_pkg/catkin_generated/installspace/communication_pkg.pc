@@ -1,0 +1,8 @@
+prefix=/home/pi/catkin_gp/install
+
+Name: communication_pkg
+Description: Description of communication_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pi/catkin_gp/install/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/pi/catkin_gp/devel
+
+Name: control_pkg
+Description: Description of control_pkg
+Version: 0.0.0
+Cflags: -I/home/pi/catkin_gp/devel/include
+Libs: -L/home/pi/catkin_gp/devel/lib 
+Requires: 

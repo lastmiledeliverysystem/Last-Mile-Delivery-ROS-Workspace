@@ -1,0 +1,8 @@
+prefix=/home/pi/catkin_gp/devel
+
+Name: stereo_msgs
+Description: Description of stereo_msgs
+Version: 1.12.7
+Cflags: -I/home/pi/catkin_gp/devel/include
+Libs: -L/home/pi/catkin_gp/devel/lib 
+Requires: message_runtime sensor_msgs std_msgs
