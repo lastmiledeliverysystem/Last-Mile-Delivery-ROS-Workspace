@@ -21,7 +21,8 @@ void scanCallback(const sensor_msgs::LaserScan::ConstPtr& scan)
     for(int i = 0; i < count; i++) {
         float degree = RAD2DEG(scan->angle_min + scan->angle_increment * i);
 	if(degree > -5 && degree< 5)
-        printf("[YDLIDAR INFO]: angle-distance : [%f, %f, %i]\n", degree, scan->ranges[i], i);
+        //printf("[YDLIDAR INFO]: angle-distance : [%f, %f, %i]\n", degree, scan->ranges[i], i);
+        printf("[%f, %f]\n", degree, scan->ranges[i]);
     }
 }
 

@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "sensors_pkg: 2 messages, 0 services")
+message(STATUS "sensors_pkg: 3 messages, 0 services")
 
 set(MSG_I_FLAGS "-Isensors_pkg:/home/pi/catkin_gp/src/sensors_pkg/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
@@ -22,6 +22,11 @@ add_custom_target(_sensors_pkg_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sensors_pkg" "/home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg" ""
 )
 
+get_filename_component(_filename "/home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg" NAME_WE)
+add_custom_target(_sensors_pkg_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sensors_pkg" "/home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg" ""
+)
+
 get_filename_component(_filename "/home/pi/catkin_gp/src/sensors_pkg/msg/Gps.msg" NAME_WE)
 add_custom_target(_sensors_pkg_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sensors_pkg" "/home/pi/catkin_gp/src/sensors_pkg/msg/Gps.msg" ""
@@ -35,6 +40,12 @@ add_custom_target(_sensors_pkg_generate_messages_check_deps_${_filename}
 ### Generating Messages
 _generate_msg_cpp(sensors_pkg
   "/home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sensors_pkg
+)
+_generate_msg_cpp(sensors_pkg
+  "/home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sensors_pkg
@@ -62,6 +73,8 @@ add_dependencies(sensors_pkg_generate_messages sensors_pkg_generate_messages_cpp
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg" NAME_WE)
 add_dependencies(sensors_pkg_generate_messages_cpp _sensors_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg" NAME_WE)
+add_dependencies(sensors_pkg_generate_messages_cpp _sensors_pkg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/pi/catkin_gp/src/sensors_pkg/msg/Gps.msg" NAME_WE)
 add_dependencies(sensors_pkg_generate_messages_cpp _sensors_pkg_generate_messages_check_deps_${_filename})
 
@@ -76,6 +89,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS sensors_pkg_generate_messages_cpp)
 ### Generating Messages
 _generate_msg_eus(sensors_pkg
   "/home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sensors_pkg
+)
+_generate_msg_eus(sensors_pkg
+  "/home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sensors_pkg
@@ -103,6 +122,8 @@ add_dependencies(sensors_pkg_generate_messages sensors_pkg_generate_messages_eus
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg" NAME_WE)
 add_dependencies(sensors_pkg_generate_messages_eus _sensors_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg" NAME_WE)
+add_dependencies(sensors_pkg_generate_messages_eus _sensors_pkg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/pi/catkin_gp/src/sensors_pkg/msg/Gps.msg" NAME_WE)
 add_dependencies(sensors_pkg_generate_messages_eus _sensors_pkg_generate_messages_check_deps_${_filename})
 
@@ -117,6 +138,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS sensors_pkg_generate_messages_eus)
 ### Generating Messages
 _generate_msg_lisp(sensors_pkg
   "/home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sensors_pkg
+)
+_generate_msg_lisp(sensors_pkg
+  "/home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sensors_pkg
@@ -144,6 +171,8 @@ add_dependencies(sensors_pkg_generate_messages sensors_pkg_generate_messages_lis
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg" NAME_WE)
 add_dependencies(sensors_pkg_generate_messages_lisp _sensors_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg" NAME_WE)
+add_dependencies(sensors_pkg_generate_messages_lisp _sensors_pkg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/pi/catkin_gp/src/sensors_pkg/msg/Gps.msg" NAME_WE)
 add_dependencies(sensors_pkg_generate_messages_lisp _sensors_pkg_generate_messages_check_deps_${_filename})
 
@@ -158,6 +187,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS sensors_pkg_generate_messages_lisp)
 ### Generating Messages
 _generate_msg_nodejs(sensors_pkg
   "/home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sensors_pkg
+)
+_generate_msg_nodejs(sensors_pkg
+  "/home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sensors_pkg
@@ -185,6 +220,8 @@ add_dependencies(sensors_pkg_generate_messages sensors_pkg_generate_messages_nod
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg" NAME_WE)
 add_dependencies(sensors_pkg_generate_messages_nodejs _sensors_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg" NAME_WE)
+add_dependencies(sensors_pkg_generate_messages_nodejs _sensors_pkg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/pi/catkin_gp/src/sensors_pkg/msg/Gps.msg" NAME_WE)
 add_dependencies(sensors_pkg_generate_messages_nodejs _sensors_pkg_generate_messages_check_deps_${_filename})
 
@@ -199,6 +236,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS sensors_pkg_generate_messages_nodej
 ### Generating Messages
 _generate_msg_py(sensors_pkg
   "/home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sensors_pkg
+)
+_generate_msg_py(sensors_pkg
+  "/home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sensors_pkg
@@ -225,6 +268,8 @@ add_dependencies(sensors_pkg_generate_messages sensors_pkg_generate_messages_py)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg" NAME_WE)
+add_dependencies(sensors_pkg_generate_messages_py _sensors_pkg_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg" NAME_WE)
 add_dependencies(sensors_pkg_generate_messages_py _sensors_pkg_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/pi/catkin_gp/src/sensors_pkg/msg/Gps.msg" NAME_WE)
 add_dependencies(sensors_pkg_generate_messages_py _sensors_pkg_generate_messages_check_deps_${_filename})

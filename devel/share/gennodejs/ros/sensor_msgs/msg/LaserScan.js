@@ -197,6 +197,7 @@ class LaserScan {
                              # device does not provide intensities, please leave
                              # the array empty.
     
+    
     ================================================================================
     MSG: std_msgs/Header
     # Standard metadata for higher-level stamped data types.

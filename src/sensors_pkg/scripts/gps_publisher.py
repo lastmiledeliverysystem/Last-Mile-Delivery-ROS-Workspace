@@ -21,11 +21,11 @@ def talker():
             
             data = pynmea2.parse(output)
             #parse the latitude and print
-            msg.lat = data.lat
+            msg.lat = float(data.lat)
             #concatlat = "lat:" + str(latval)
     
             #parse the longitude and print
-            msg.long = data.lon
+            msg.long = float(data.lon)
             #concatlong = "long:"+ str(longval)
             
             #output = (concatlat, concatlong)

@@ -380,6 +380,9 @@ gtest_hide_internal_symbols:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
+//The directory containing a CMake configuration file for image_transport.
+image_transport_DIR:PATH=image_transport_DIR-NOTFOUND
+
 //Path to a library.
 lib:FILEPATH=/opt/ros/kinetic/lib/libxmlrpcpp.so
 
@@ -451,6 +454,12 @@ trajectory_msgs_BINARY_DIR:STATIC=/home/pi/catkin_gp/build/common_msgs/trajector
 
 //Value Computed by CMake
 trajectory_msgs_SOURCE_DIR:STATIC=/home/pi/catkin_gp/src/common_msgs/trajectory_msgs
+
+//Value Computed by CMake
+usb_cam_BINARY_DIR:STATIC=/home/pi/catkin_gp/build/usb_cam
+
+//Value Computed by CMake
+usb_cam_SOURCE_DIR:STATIC=/home/pi/catkin_gp/src/usb_cam
 
 //Value Computed by CMake
 visualization_msgs_BINARY_DIR:STATIC=/home/pi/catkin_gp/build/common_msgs/visualization_msgs

@@ -14,6 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
 )
 
+
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 
@@ -52,6 +53,7 @@ find_package(catkin REQUIRED COMPONENTS
    FILES
    Imu.msg
    Gps.msg
+   Camera.msg
  )
 
 ## Generate services in the 'srv' folder
@@ -120,6 +122,8 @@ include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
 )
+
+
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}

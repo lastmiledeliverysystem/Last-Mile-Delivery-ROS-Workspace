@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/pi/catkin_gp/build
 include sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_py.dir/progress.make
 
 sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_py: /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/_Imu.py
+sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_py: /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/_Camera.py
 sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_py: /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/_Gps.py
 sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_py: /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/__init__.py
 
@@ -63,19 +64,26 @@ sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_py: /home/pi/catkin_gp/deve
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/catkin_gp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG sensors_pkg/Imu"
 	cd /home/pi/catkin_gp/build/sensors_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg -Isensors_pkg:/home/pi/catkin_gp/src/sensors_pkg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sensors_pkg -o /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg
 
+/home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/_Camera.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/_Camera.py: /home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/catkin_gp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG sensors_pkg/Camera"
+	cd /home/pi/catkin_gp/build/sensors_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg -Isensors_pkg:/home/pi/catkin_gp/src/sensors_pkg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sensors_pkg -o /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg
+
 /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/_Gps.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/_Gps.py: /home/pi/catkin_gp/src/sensors_pkg/msg/Gps.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/catkin_gp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG sensors_pkg/Gps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/catkin_gp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG sensors_pkg/Gps"
 	cd /home/pi/catkin_gp/build/sensors_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/pi/catkin_gp/src/sensors_pkg/msg/Gps.msg -Isensors_pkg:/home/pi/catkin_gp/src/sensors_pkg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sensors_pkg -o /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg
 
 /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/__init__.py: /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/_Imu.py
+/home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/__init__.py: /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/_Camera.py
 /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/__init__.py: /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/_Gps.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/catkin_gp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for sensors_pkg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/catkin_gp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python msg __init__.py for sensors_pkg"
 	cd /home/pi/catkin_gp/build/sensors_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg --initpy
 
 sensors_pkg_generate_messages_py: sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_py
 sensors_pkg_generate_messages_py: /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/_Imu.py
+sensors_pkg_generate_messages_py: /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/_Camera.py
 sensors_pkg_generate_messages_py: /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/_Gps.py
 sensors_pkg_generate_messages_py: /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/sensors_pkg/msg/__init__.py
 sensors_pkg_generate_messages_py: sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_py.dir/build.make

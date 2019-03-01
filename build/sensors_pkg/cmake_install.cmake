@@ -36,6 +36,7 @@ if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMP
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sensors_pkg/msg" TYPE FILE FILES
     "/home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg"
     "/home/pi/catkin_gp/src/sensors_pkg/msg/Gps.msg"
+    "/home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg"
     )
 endif()
 

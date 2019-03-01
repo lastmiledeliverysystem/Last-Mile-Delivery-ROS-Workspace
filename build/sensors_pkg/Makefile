@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/pi/catkin_gp/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -111,6 +100,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -196,36 +196,6 @@ sensors_pkg_gennodejs/fast:
 .PHONY : sensors_pkg_gennodejs/fast
 
 # Convenience name for target.
-sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_cpp.dir/rule:
-	cd /home/pi/catkin_gp/build && $(MAKE) -f CMakeFiles/Makefile2 sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_cpp.dir/rule
-.PHONY : sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-sensors_pkg_generate_messages_cpp: sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_cpp.dir/rule
-
-.PHONY : sensors_pkg_generate_messages_cpp
-
-# fast build rule for target.
-sensors_pkg_generate_messages_cpp/fast:
-	cd /home/pi/catkin_gp/build && $(MAKE) -f sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_cpp.dir/build.make sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_cpp.dir/build
-.PHONY : sensors_pkg_generate_messages_cpp/fast
-
-# Convenience name for target.
-sensors_pkg/CMakeFiles/sensors_pkg_genlisp.dir/rule:
-	cd /home/pi/catkin_gp/build && $(MAKE) -f CMakeFiles/Makefile2 sensors_pkg/CMakeFiles/sensors_pkg_genlisp.dir/rule
-.PHONY : sensors_pkg/CMakeFiles/sensors_pkg_genlisp.dir/rule
-
-# Convenience name for target.
-sensors_pkg_genlisp: sensors_pkg/CMakeFiles/sensors_pkg_genlisp.dir/rule
-
-.PHONY : sensors_pkg_genlisp
-
-# fast build rule for target.
-sensors_pkg_genlisp/fast:
-	cd /home/pi/catkin_gp/build && $(MAKE) -f sensors_pkg/CMakeFiles/sensors_pkg_genlisp.dir/build.make sensors_pkg/CMakeFiles/sensors_pkg_genlisp.dir/build
-.PHONY : sensors_pkg_genlisp/fast
-
-# Convenience name for target.
 sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_nodejs.dir/rule:
 	cd /home/pi/catkin_gp/build && $(MAKE) -f CMakeFiles/Makefile2 sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_nodejs.dir/rule
 .PHONY : sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_nodejs.dir/rule
@@ -239,6 +209,36 @@ sensors_pkg_generate_messages_nodejs: sensors_pkg/CMakeFiles/sensors_pkg_generat
 sensors_pkg_generate_messages_nodejs/fast:
 	cd /home/pi/catkin_gp/build && $(MAKE) -f sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_nodejs.dir/build.make sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_nodejs.dir/build
 .PHONY : sensors_pkg_generate_messages_nodejs/fast
+
+# Convenience name for target.
+sensors_pkg/CMakeFiles/_sensors_pkg_generate_messages_check_deps_Camera.dir/rule:
+	cd /home/pi/catkin_gp/build && $(MAKE) -f CMakeFiles/Makefile2 sensors_pkg/CMakeFiles/_sensors_pkg_generate_messages_check_deps_Camera.dir/rule
+.PHONY : sensors_pkg/CMakeFiles/_sensors_pkg_generate_messages_check_deps_Camera.dir/rule
+
+# Convenience name for target.
+_sensors_pkg_generate_messages_check_deps_Camera: sensors_pkg/CMakeFiles/_sensors_pkg_generate_messages_check_deps_Camera.dir/rule
+
+.PHONY : _sensors_pkg_generate_messages_check_deps_Camera
+
+# fast build rule for target.
+_sensors_pkg_generate_messages_check_deps_Camera/fast:
+	cd /home/pi/catkin_gp/build && $(MAKE) -f sensors_pkg/CMakeFiles/_sensors_pkg_generate_messages_check_deps_Camera.dir/build.make sensors_pkg/CMakeFiles/_sensors_pkg_generate_messages_check_deps_Camera.dir/build
+.PHONY : _sensors_pkg_generate_messages_check_deps_Camera/fast
+
+# Convenience name for target.
+sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_eus.dir/rule:
+	cd /home/pi/catkin_gp/build && $(MAKE) -f CMakeFiles/Makefile2 sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_eus.dir/rule
+.PHONY : sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sensors_pkg_generate_messages_eus: sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_eus.dir/rule
+
+.PHONY : sensors_pkg_generate_messages_eus
+
+# fast build rule for target.
+sensors_pkg_generate_messages_eus/fast:
+	cd /home/pi/catkin_gp/build && $(MAKE) -f sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_eus.dir/build.make sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_eus.dir/build
+.PHONY : sensors_pkg_generate_messages_eus/fast
 
 # Convenience name for target.
 sensors_pkg/CMakeFiles/_sensors_pkg_generate_messages_check_deps_Imu.dir/rule:
@@ -301,6 +301,36 @@ sensors_pkg_generate_messages/fast:
 .PHONY : sensors_pkg_generate_messages/fast
 
 # Convenience name for target.
+sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_cpp.dir/rule:
+	cd /home/pi/catkin_gp/build && $(MAKE) -f CMakeFiles/Makefile2 sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_cpp.dir/rule
+.PHONY : sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sensors_pkg_generate_messages_cpp: sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_cpp.dir/rule
+
+.PHONY : sensors_pkg_generate_messages_cpp
+
+# fast build rule for target.
+sensors_pkg_generate_messages_cpp/fast:
+	cd /home/pi/catkin_gp/build && $(MAKE) -f sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_cpp.dir/build.make sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_cpp.dir/build
+.PHONY : sensors_pkg_generate_messages_cpp/fast
+
+# Convenience name for target.
+sensors_pkg/CMakeFiles/sensors_pkg_genlisp.dir/rule:
+	cd /home/pi/catkin_gp/build && $(MAKE) -f CMakeFiles/Makefile2 sensors_pkg/CMakeFiles/sensors_pkg_genlisp.dir/rule
+.PHONY : sensors_pkg/CMakeFiles/sensors_pkg_genlisp.dir/rule
+
+# Convenience name for target.
+sensors_pkg_genlisp: sensors_pkg/CMakeFiles/sensors_pkg_genlisp.dir/rule
+
+.PHONY : sensors_pkg_genlisp
+
+# fast build rule for target.
+sensors_pkg_genlisp/fast:
+	cd /home/pi/catkin_gp/build && $(MAKE) -f sensors_pkg/CMakeFiles/sensors_pkg_genlisp.dir/build.make sensors_pkg/CMakeFiles/sensors_pkg_genlisp.dir/build
+.PHONY : sensors_pkg_genlisp/fast
+
+# Convenience name for target.
 sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_py.dir/rule:
 	cd /home/pi/catkin_gp/build && $(MAKE) -f CMakeFiles/Makefile2 sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_py.dir/rule
 .PHONY : sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_py.dir/rule
@@ -331,21 +361,6 @@ sensors_pkg_gencpp/fast:
 .PHONY : sensors_pkg_gencpp/fast
 
 # Convenience name for target.
-sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_eus.dir/rule:
-	cd /home/pi/catkin_gp/build && $(MAKE) -f CMakeFiles/Makefile2 sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_eus.dir/rule
-.PHONY : sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-sensors_pkg_generate_messages_eus: sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_eus.dir/rule
-
-.PHONY : sensors_pkg_generate_messages_eus
-
-# fast build rule for target.
-sensors_pkg_generate_messages_eus/fast:
-	cd /home/pi/catkin_gp/build && $(MAKE) -f sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_eus.dir/build.make sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_eus.dir/build
-.PHONY : sensors_pkg_generate_messages_eus/fast
-
-# Convenience name for target.
 sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_lisp.dir/rule:
 	cd /home/pi/catkin_gp/build && $(MAKE) -f CMakeFiles/Makefile2 sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_lisp.dir/rule
 .PHONY : sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_lisp.dir/rule
@@ -366,24 +381,25 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... sensors_pkg_genpy"
 	@echo "... sensors_pkg_gennodejs"
-	@echo "... sensors_pkg_generate_messages_cpp"
-	@echo "... sensors_pkg_genlisp"
 	@echo "... edit_cache"
 	@echo "... sensors_pkg_generate_messages_nodejs"
+	@echo "... install/local"
+	@echo "... _sensors_pkg_generate_messages_check_deps_Camera"
+	@echo "... list_install_components"
+	@echo "... sensors_pkg_generate_messages_eus"
 	@echo "... _sensors_pkg_generate_messages_check_deps_Imu"
 	@echo "... sensors_pkg_geneus"
 	@echo "... _sensors_pkg_generate_messages_check_deps_Gps"
 	@echo "... sensors_pkg_generate_messages"
+	@echo "... sensors_pkg_generate_messages_cpp"
+	@echo "... sensors_pkg_genlisp"
 	@echo "... sensors_pkg_generate_messages_py"
 	@echo "... sensors_pkg_gencpp"
-	@echo "... list_install_components"
-	@echo "... sensors_pkg_generate_messages_eus"
 	@echo "... test"
 	@echo "... sensors_pkg_generate_messages_lisp"
 .PHONY : help

@@ -214,6 +214,7 @@ float32[] intensities    # intensity data [device-specific units].  If your\n\
                          # device does not provide intensities, please leave\n\
                          # the array empty.\n\
 \n\
+\n\
 ================================================================================\n\
 MSG: std_msgs/Header\n\
 # Standard metadata for higher-level stamped data types.\n\

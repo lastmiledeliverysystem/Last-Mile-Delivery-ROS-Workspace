@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg;/home/pi/catkin_gp/src/sensors_pkg/msg/Gps.msg"
+messages_str = "/home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg;/home/pi/catkin_gp/src/sensors_pkg/msg/Gps.msg;/home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg"
 services_str = ""
 pkg_name = "sensors_pkg"
 dependencies_str = "std_msgs"
