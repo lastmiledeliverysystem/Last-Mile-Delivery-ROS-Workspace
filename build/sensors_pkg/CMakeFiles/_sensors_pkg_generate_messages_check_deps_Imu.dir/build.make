@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/pi/catkin_gp/build
 include sensors_pkg/CMakeFiles/_sensors_pkg_generate_messages_check_deps_Imu.dir/progress.make
 
 sensors_pkg/CMakeFiles/_sensors_pkg_generate_messages_check_deps_Imu:
-	cd /home/pi/catkin_gp/build/sensors_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py sensors_pkg /home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg 
+	cd /home/pi/catkin_gp/build/sensors_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py sensors_pkg /home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg std_msgs/Header
 
 _sensors_pkg_generate_messages_check_deps_Imu: sensors_pkg/CMakeFiles/_sensors_pkg_generate_messages_check_deps_Imu
 _sensors_pkg_generate_messages_check_deps_Imu: sensors_pkg/CMakeFiles/_sensors_pkg_generate_messages_check_deps_Imu.dir/build.make

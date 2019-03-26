@@ -60,16 +60,19 @@ sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_lisp: /home/pi/catkin_gp/de
 
 /home/pi/catkin_gp/devel/share/common-lisp/ros/sensors_pkg/msg/Imu.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/pi/catkin_gp/devel/share/common-lisp/ros/sensors_pkg/msg/Imu.lisp: /home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg
+/home/pi/catkin_gp/devel/share/common-lisp/ros/sensors_pkg/msg/Imu.lisp: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/catkin_gp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from sensors_pkg/Imu.msg"
 	cd /home/pi/catkin_gp/build/sensors_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg -Isensors_pkg:/home/pi/catkin_gp/src/sensors_pkg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sensors_pkg -o /home/pi/catkin_gp/devel/share/common-lisp/ros/sensors_pkg/msg
 
 /home/pi/catkin_gp/devel/share/common-lisp/ros/sensors_pkg/msg/Camera.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/pi/catkin_gp/devel/share/common-lisp/ros/sensors_pkg/msg/Camera.lisp: /home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg
+/home/pi/catkin_gp/devel/share/common-lisp/ros/sensors_pkg/msg/Camera.lisp: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/catkin_gp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from sensors_pkg/Camera.msg"
 	cd /home/pi/catkin_gp/build/sensors_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg -Isensors_pkg:/home/pi/catkin_gp/src/sensors_pkg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sensors_pkg -o /home/pi/catkin_gp/devel/share/common-lisp/ros/sensors_pkg/msg
 
 /home/pi/catkin_gp/devel/share/common-lisp/ros/sensors_pkg/msg/Gps.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/pi/catkin_gp/devel/share/common-lisp/ros/sensors_pkg/msg/Gps.lisp: /home/pi/catkin_gp/src/sensors_pkg/msg/Gps.msg
+/home/pi/catkin_gp/devel/share/common-lisp/ros/sensors_pkg/msg/Gps.lisp: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/catkin_gp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from sensors_pkg/Gps.msg"
 	cd /home/pi/catkin_gp/build/sensors_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/pi/catkin_gp/src/sensors_pkg/msg/Gps.msg -Isensors_pkg:/home/pi/catkin_gp/src/sensors_pkg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sensors_pkg -o /home/pi/catkin_gp/devel/share/common-lisp/ros/sensors_pkg/msg
 

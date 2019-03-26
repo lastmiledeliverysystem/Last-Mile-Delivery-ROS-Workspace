@@ -58,8 +58,9 @@ control_pkg/CMakeFiles/control_pkg_generate_messages_nodejs: /home/pi/catkin_gp/
 
 /home/pi/catkin_gp/devel/share/gennodejs/ros/control_pkg/msg/Diff_drive.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 /home/pi/catkin_gp/devel/share/gennodejs/ros/control_pkg/msg/Diff_drive.js: /home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg
+/home/pi/catkin_gp/devel/share/gennodejs/ros/control_pkg/msg/Diff_drive.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/catkin_gp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from control_pkg/Diff_drive.msg"
-	cd /home/pi/catkin_gp/build/control_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg -Icontrol_pkg:/home/pi/catkin_gp/src/control_pkg/msg -p control_pkg -o /home/pi/catkin_gp/devel/share/gennodejs/ros/control_pkg/msg
+	cd /home/pi/catkin_gp/build/control_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg -Icontrol_pkg:/home/pi/catkin_gp/src/control_pkg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p control_pkg -o /home/pi/catkin_gp/devel/share/gennodejs/ros/control_pkg/msg
 
 control_pkg_generate_messages_nodejs: control_pkg/CMakeFiles/control_pkg_generate_messages_nodejs
 control_pkg_generate_messages_nodejs: /home/pi/catkin_gp/devel/share/gennodejs/ros/control_pkg/msg/Diff_drive.js

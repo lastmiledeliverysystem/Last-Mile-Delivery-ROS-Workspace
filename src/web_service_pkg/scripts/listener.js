@@ -101,9 +101,9 @@ app.get('/api/lidar', (req,res)=> {
 
 app.get('/api/camera', (req,res)=> {
     console.log('<< Camera Get request >>')
-    pickle.loads(cameraData.image,() =>{
-      res.send(cameraData)
-    });
+    //pickle.loads(cameraData.image,() =>{
+      res.sendFile('/home/pi/catkin_gp/image.jpg');
+    //});
     
 });
 
@@ -116,7 +116,7 @@ if (require.main === module) {
       const subGps = rosNode.subscribe('/gps_topic', Gps_msgs.Gps, callbackGps);
       //const subImu = rosNode.subscribe('/imu_topic', Imu_msgs.Imu, callbackImu);
       const subLidar = rosNode.subscribe('/lidar_topic', Lidar_msgs.LaserScan, callbackLidar);
-      const subCamera = rosNode.subscribe('/camera_topic', Camera_msgs.Camera, callbackCamera);
+      //const subCamera = rosNode.subscribe('/camera_topic', Camera_msgs.Camera, callbackCamera);
     
       app.listen(3000, (err)=> {
        if (err) console.log(err);

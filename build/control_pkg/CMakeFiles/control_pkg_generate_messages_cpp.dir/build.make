@@ -58,9 +58,10 @@ control_pkg/CMakeFiles/control_pkg_generate_messages_cpp: /home/pi/catkin_gp/dev
 
 /home/pi/catkin_gp/devel/include/control_pkg/Diff_drive.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/pi/catkin_gp/devel/include/control_pkg/Diff_drive.h: /home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg
+/home/pi/catkin_gp/devel/include/control_pkg/Diff_drive.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 /home/pi/catkin_gp/devel/include/control_pkg/Diff_drive.h: /opt/ros/kinetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/catkin_gp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from control_pkg/Diff_drive.msg"
-	cd /home/pi/catkin_gp/src/control_pkg && /home/pi/catkin_gp/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg -Icontrol_pkg:/home/pi/catkin_gp/src/control_pkg/msg -p control_pkg -o /home/pi/catkin_gp/devel/include/control_pkg -e /opt/ros/kinetic/share/gencpp/cmake/..
+	cd /home/pi/catkin_gp/src/control_pkg && /home/pi/catkin_gp/build/catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg -Icontrol_pkg:/home/pi/catkin_gp/src/control_pkg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p control_pkg -o /home/pi/catkin_gp/devel/include/control_pkg -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 control_pkg_generate_messages_cpp: control_pkg/CMakeFiles/control_pkg_generate_messages_cpp
 control_pkg_generate_messages_cpp: /home/pi/catkin_gp/devel/include/control_pkg/Diff_drive.h

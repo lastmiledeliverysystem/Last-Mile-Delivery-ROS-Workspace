@@ -391,12 +391,3 @@
 /home/pi/catkin_gp/build/web_service_pkg/CMakeFiles/install/strip.dir
 /home/pi/catkin_gp/build/web_service_pkg/CMakeFiles/edit_cache.dir
 /home/pi/catkin_gp/build/web_service_pkg/CMakeFiles/rebuild_cache.dir
-/home/pi/catkin_gp/build/ydlidar-master/CMakeFiles/install/local.dir
-/home/pi/catkin_gp/build/ydlidar-master/CMakeFiles/install.dir
-/home/pi/catkin_gp/build/ydlidar-master/CMakeFiles/list_install_components.dir
-/home/pi/catkin_gp/build/ydlidar-master/CMakeFiles/rebuild_cache.dir
-/home/pi/catkin_gp/build/ydlidar-master/CMakeFiles/ydlidar_node.dir
-/home/pi/catkin_gp/build/ydlidar-master/CMakeFiles/ydlidar_client.dir
-/home/pi/catkin_gp/build/ydlidar-master/CMakeFiles/install/strip.dir
-/home/pi/catkin_gp/build/ydlidar-master/CMakeFiles/edit_cache.dir
-/home/pi/catkin_gp/build/ydlidar-master/CMakeFiles/test.dir

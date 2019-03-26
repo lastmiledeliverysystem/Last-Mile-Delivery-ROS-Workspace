@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/pi/catkin_gp/build
 include control_pkg/CMakeFiles/_control_pkg_generate_messages_check_deps_Diff_drive.dir/progress.make
 
 control_pkg/CMakeFiles/_control_pkg_generate_messages_check_deps_Diff_drive:
-	cd /home/pi/catkin_gp/build/control_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py control_pkg /home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg 
+	cd /home/pi/catkin_gp/build/control_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py control_pkg /home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg std_msgs/Header
 
 _control_pkg_generate_messages_check_deps_Diff_drive: control_pkg/CMakeFiles/_control_pkg_generate_messages_check_deps_Diff_drive
 _control_pkg_generate_messages_check_deps_Diff_drive: control_pkg/CMakeFiles/_control_pkg_generate_messages_check_deps_Diff_drive.dir/build.make

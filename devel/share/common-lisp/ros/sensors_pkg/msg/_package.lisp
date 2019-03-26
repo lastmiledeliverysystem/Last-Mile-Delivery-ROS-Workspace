@@ -7,7 +7,5 @@
    "GPS"
    "<IMU>"
    "IMU"
-   "<ROW>"
-   "ROW"
   ))
 

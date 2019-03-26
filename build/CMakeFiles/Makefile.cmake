@@ -75,8 +75,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "sensors_pkg/cmake/sensors_pkg-genmsg.cmake"
   "web_service_pkg/catkin_generated/ordered_paths.cmake"
   "web_service_pkg/catkin_generated/package.cmake"
-  "ydlidar-master/catkin_generated/ordered_paths.cmake"
-  "ydlidar-master/catkin_generated/package.cmake"
   "/home/pi/catkin_gp/devel/share/actionlib_msgs/cmake/actionlib_msgs-extras.cmake"
   "/home/pi/catkin_gp/devel/share/actionlib_msgs/cmake/actionlib_msgs-msg-extras.cmake"
   "/home/pi/catkin_gp/devel/share/actionlib_msgs/cmake/actionlib_msgs-msg-paths.cmake"
@@ -132,8 +130,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/pi/catkin_gp/src/sensors_pkg/package.xml"
   "/home/pi/catkin_gp/src/web_service_pkg/CMakeLists.txt"
   "/home/pi/catkin_gp/src/web_service_pkg/package.xml"
-  "/home/pi/catkin_gp/src/ydlidar-master/CMakeLists.txt"
-  "/home/pi/catkin_gp/src/ydlidar-master/package.xml"
   "/opt/ros/kinetic/share/catkin/cmake/../package.xml"
   "/opt/ros/kinetic/share/catkin/cmake/all.cmake"
   "/opt/ros/kinetic/share/catkin/cmake/assert.cmake"
@@ -317,7 +313,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "common_msgs/sensor_msgs/test/CMakeFiles/CMakeDirectoryInformation.cmake"
   "common_msgs/stereo_msgs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "web_service_pkg/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "ydlidar-master/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -582,6 +577,4 @@ set(CMAKE_DEPEND_INFO_FILES
   "common_msgs/stereo_msgs/CMakeFiles/stereo_msgs_gencpp.dir/DependInfo.cmake"
   "common_msgs/stereo_msgs/CMakeFiles/stereo_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "common_msgs/stereo_msgs/CMakeFiles/stereo_msgs_genlisp.dir/DependInfo.cmake"
-  "ydlidar-master/CMakeFiles/ydlidar_node.dir/DependInfo.cmake"
-  "ydlidar-master/CMakeFiles/ydlidar_client.dir/DependInfo.cmake"
   )

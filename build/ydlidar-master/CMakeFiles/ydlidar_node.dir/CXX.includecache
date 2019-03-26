@@ -6,24 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/pi/catkin_gp/devel/include/sensor_msgs/LaserScan.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-std_msgs/Header.h
--
-
 /home/pi/catkin_gp/src/ydlidar-master/sdk/include/CYdLidar.h
 utils.h
 /home/pi/catkin_gp/src/ydlidar-master/sdk/include/utils.h
@@ -656,10 +638,6 @@ cstddef
 memory
 -
 
-/opt/ros/kinetic/include/ros/message_operations.h
-ostream
--
-
 /opt/ros/kinetic/include/ros/message_traits.h
 message_forward.h
 /opt/ros/kinetic/include/ros/message_forward.h
@@ -1093,22 +1071,6 @@ ros/forwards.h
 /opt/ros/kinetic/include/ros/ros/forwards.h
 
 /opt/ros/kinetic/include/rosconsole/macros_generated.h
-
-/opt/ros/kinetic/include/std_msgs/Header.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
 
 /opt/ros/kinetic/include/xmlrpcpp/XmlRpcDecl.h
 ros/macros.h

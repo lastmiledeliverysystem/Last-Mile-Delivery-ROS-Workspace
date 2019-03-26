@@ -1,2 +1,2 @@
-common_msgs/actionlib_msgs:common_msgs/common_msgs:common_msgs/diagnostic_msgs:common_msgs/geometry_msgs:common_msgs/nav_msgs:common_msgs/sensor_msgs:common_msgs/shape_msgs:common_msgs/stereo_msgs:common_msgs/trajectory_msgs:common_msgs/visualization_msgs:communication_pkg:control_pkg:sensors_pkg:web_service_pkg:ydlidar-master
+common_msgs/actionlib_msgs:common_msgs/common_msgs:common_msgs/diagnostic_msgs:common_msgs/geometry_msgs:common_msgs/nav_msgs:common_msgs/sensor_msgs:common_msgs/shape_msgs:common_msgs/stereo_msgs:common_msgs/trajectory_msgs:common_msgs/visualization_msgs:communication_pkg:control_pkg:sensors_pkg:web_service_pkg
 -DCATKIN_DEVEL_PREFIX=/home/pi/catkin_gp/devel -DCMAKE_INSTALL_PREFIX=/home/pi/catkin_gp/install -G Unix Makefiles

@@ -131,7 +131,6 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/pi/catkin_gp/build/common_msgs/sensor_msgs/cmake_install.cmake")
   include("/home/pi/catkin_gp/build/common_msgs/stereo_msgs/cmake_install.cmake")
   include("/home/pi/catkin_gp/build/web_service_pkg/cmake_install.cmake")
-  include("/home/pi/catkin_gp/build/ydlidar-master/cmake_install.cmake")
 
 endif()
 

@@ -60,16 +60,19 @@ sensors_pkg/CMakeFiles/sensors_pkg_generate_messages_nodejs: /home/pi/catkin_gp/
 
 /home/pi/catkin_gp/devel/share/gennodejs/ros/sensors_pkg/msg/Imu.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 /home/pi/catkin_gp/devel/share/gennodejs/ros/sensors_pkg/msg/Imu.js: /home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg
+/home/pi/catkin_gp/devel/share/gennodejs/ros/sensors_pkg/msg/Imu.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/catkin_gp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from sensors_pkg/Imu.msg"
 	cd /home/pi/catkin_gp/build/sensors_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/pi/catkin_gp/src/sensors_pkg/msg/Imu.msg -Isensors_pkg:/home/pi/catkin_gp/src/sensors_pkg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sensors_pkg -o /home/pi/catkin_gp/devel/share/gennodejs/ros/sensors_pkg/msg
 
 /home/pi/catkin_gp/devel/share/gennodejs/ros/sensors_pkg/msg/Camera.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 /home/pi/catkin_gp/devel/share/gennodejs/ros/sensors_pkg/msg/Camera.js: /home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg
+/home/pi/catkin_gp/devel/share/gennodejs/ros/sensors_pkg/msg/Camera.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/catkin_gp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from sensors_pkg/Camera.msg"
 	cd /home/pi/catkin_gp/build/sensors_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/pi/catkin_gp/src/sensors_pkg/msg/Camera.msg -Isensors_pkg:/home/pi/catkin_gp/src/sensors_pkg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sensors_pkg -o /home/pi/catkin_gp/devel/share/gennodejs/ros/sensors_pkg/msg
 
 /home/pi/catkin_gp/devel/share/gennodejs/ros/sensors_pkg/msg/Gps.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 /home/pi/catkin_gp/devel/share/gennodejs/ros/sensors_pkg/msg/Gps.js: /home/pi/catkin_gp/src/sensors_pkg/msg/Gps.msg
+/home/pi/catkin_gp/devel/share/gennodejs/ros/sensors_pkg/msg/Gps.js: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/catkin_gp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from sensors_pkg/Gps.msg"
 	cd /home/pi/catkin_gp/build/sensors_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/pi/catkin_gp/src/sensors_pkg/msg/Gps.msg -Isensors_pkg:/home/pi/catkin_gp/src/sensors_pkg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sensors_pkg -o /home/pi/catkin_gp/devel/share/gennodejs/ros/sensors_pkg/msg
 

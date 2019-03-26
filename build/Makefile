@@ -3545,32 +3545,6 @@ stereo_msgs_genlisp/fast:
 	$(MAKE) -f common_msgs/stereo_msgs/CMakeFiles/stereo_msgs_genlisp.dir/build.make common_msgs/stereo_msgs/CMakeFiles/stereo_msgs_genlisp.dir/build
 .PHONY : stereo_msgs_genlisp/fast
 
-#=============================================================================
-# Target rules for targets named ydlidar_node
-
-# Build rule for target.
-ydlidar_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ydlidar_node
-.PHONY : ydlidar_node
-
-# fast build rule for target.
-ydlidar_node/fast:
-	$(MAKE) -f ydlidar-master/CMakeFiles/ydlidar_node.dir/build.make ydlidar-master/CMakeFiles/ydlidar_node.dir/build
-.PHONY : ydlidar_node/fast
-
-#=============================================================================
-# Target rules for targets named ydlidar_client
-
-# Build rule for target.
-ydlidar_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ydlidar_client
-.PHONY : ydlidar_client
-
-# fast build rule for target.
-ydlidar_client/fast:
-	$(MAKE) -f ydlidar-master/CMakeFiles/ydlidar_client.dir/build.make ydlidar-master/CMakeFiles/ydlidar_client.dir/build
-.PHONY : ydlidar_client/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -3844,8 +3818,6 @@ help:
 	@echo "... stereo_msgs_gencpp"
 	@echo "... stereo_msgs_generate_messages_lisp"
 	@echo "... stereo_msgs_genlisp"
-	@echo "... ydlidar_node"
-	@echo "... ydlidar_client"
 .PHONY : help
 
 

@@ -59,8 +59,9 @@ control_pkg/CMakeFiles/control_pkg_generate_messages_py: /home/pi/catkin_gp/deve
 
 /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/control_pkg/msg/_Diff_drive.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/control_pkg/msg/_Diff_drive.py: /home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg
+/home/pi/catkin_gp/devel/lib/python2.7/dist-packages/control_pkg/msg/_Diff_drive.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/catkin_gp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG control_pkg/Diff_drive"
-	cd /home/pi/catkin_gp/build/control_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg -Icontrol_pkg:/home/pi/catkin_gp/src/control_pkg/msg -p control_pkg -o /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/control_pkg/msg
+	cd /home/pi/catkin_gp/build/control_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg -Icontrol_pkg:/home/pi/catkin_gp/src/control_pkg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p control_pkg -o /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/control_pkg/msg
 
 /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/control_pkg/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/control_pkg/msg/__init__.py: /home/pi/catkin_gp/devel/lib/python2.7/dist-packages/control_pkg/msg/_Diff_drive.py

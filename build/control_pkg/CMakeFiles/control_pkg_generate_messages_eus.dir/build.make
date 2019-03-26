@@ -59,12 +59,13 @@ control_pkg/CMakeFiles/control_pkg_generate_messages_eus: /home/pi/catkin_gp/dev
 
 /home/pi/catkin_gp/devel/share/roseus/ros/control_pkg/msg/Diff_drive.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 /home/pi/catkin_gp/devel/share/roseus/ros/control_pkg/msg/Diff_drive.l: /home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg
+/home/pi/catkin_gp/devel/share/roseus/ros/control_pkg/msg/Diff_drive.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/catkin_gp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from control_pkg/Diff_drive.msg"
-	cd /home/pi/catkin_gp/build/control_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg -Icontrol_pkg:/home/pi/catkin_gp/src/control_pkg/msg -p control_pkg -o /home/pi/catkin_gp/devel/share/roseus/ros/control_pkg/msg
+	cd /home/pi/catkin_gp/build/control_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg -Icontrol_pkg:/home/pi/catkin_gp/src/control_pkg/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p control_pkg -o /home/pi/catkin_gp/devel/share/roseus/ros/control_pkg/msg
 
 /home/pi/catkin_gp/devel/share/roseus/ros/control_pkg/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/catkin_gp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for control_pkg"
-	cd /home/pi/catkin_gp/build/control_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/pi/catkin_gp/devel/share/roseus/ros/control_pkg control_pkg
+	cd /home/pi/catkin_gp/build/control_pkg && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/pi/catkin_gp/devel/share/roseus/ros/control_pkg control_pkg std_msgs
 
 control_pkg_generate_messages_eus: control_pkg/CMakeFiles/control_pkg_generate_messages_eus
 control_pkg_generate_messages_eus: /home/pi/catkin_gp/devel/share/roseus/ros/control_pkg/msg/Diff_drive.l

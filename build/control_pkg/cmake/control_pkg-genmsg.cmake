@@ -2,7 +2,7 @@
 
 message(STATUS "control_pkg: 1 messages, 0 services")
 
-set(MSG_I_FLAGS "-Icontrol_pkg:/home/pi/catkin_gp/src/control_pkg/msg")
+set(MSG_I_FLAGS "-Icontrol_pkg:/home/pi/catkin_gp/src/control_pkg/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -19,7 +19,7 @@ add_custom_target(control_pkg_generate_messages ALL)
 
 get_filename_component(_filename "/home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg" NAME_WE)
 add_custom_target(_control_pkg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "control_pkg" "/home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "control_pkg" "/home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg" "std_msgs/Header"
 )
 
 #
@@ -31,7 +31,7 @@ add_custom_target(_control_pkg_generate_messages_check_deps_${_filename}
 _generate_msg_cpp(control_pkg
   "/home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/control_pkg
 )
 
@@ -64,7 +64,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS control_pkg_generate_messages_cpp)
 _generate_msg_eus(control_pkg
   "/home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/control_pkg
 )
 
@@ -97,7 +97,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS control_pkg_generate_messages_eus)
 _generate_msg_lisp(control_pkg
   "/home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/control_pkg
 )
 
@@ -130,7 +130,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS control_pkg_generate_messages_lisp)
 _generate_msg_nodejs(control_pkg
   "/home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/control_pkg
 )
 
@@ -163,7 +163,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS control_pkg_generate_messages_nodej
 _generate_msg_py(control_pkg
   "/home/pi/catkin_gp/src/control_pkg/msg/Diff_drive.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/control_pkg
 )
 
@@ -200,6 +200,9 @@ if(gencpp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/co
     DESTINATION ${gencpp_INSTALL_DIR}
   )
 endif()
+if(TARGET std_msgs_generate_messages_cpp)
+  add_dependencies(control_pkg_generate_messages_cpp std_msgs_generate_messages_cpp)
+endif()
 
 if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/control_pkg)
   # install generated code
@@ -207,6 +210,9 @@ if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/co
     DIRECTORY ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/control_pkg
     DESTINATION ${geneus_INSTALL_DIR}
   )
+endif()
+if(TARGET std_msgs_generate_messages_eus)
+  add_dependencies(control_pkg_generate_messages_eus std_msgs_generate_messages_eus)
 endif()
 
 if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/control_pkg)
@@ -216,6 +222,9 @@ if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/
     DESTINATION ${genlisp_INSTALL_DIR}
   )
 endif()
+if(TARGET std_msgs_generate_messages_lisp)
+  add_dependencies(control_pkg_generate_messages_lisp std_msgs_generate_messages_lisp)
+endif()
 
 if(gennodejs_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/control_pkg)
   # install generated code
@@ -223,6 +232,9 @@ if(gennodejs_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_D
     DIRECTORY ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/control_pkg
     DESTINATION ${gennodejs_INSTALL_DIR}
   )
+endif()
+if(TARGET std_msgs_generate_messages_nodejs)
+  add_dependencies(control_pkg_generate_messages_nodejs std_msgs_generate_messages_nodejs)
 endif()
 
 if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/control_pkg)
@@ -232,4 +244,7 @@ if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/cont
     DIRECTORY ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/control_pkg
     DESTINATION ${genpy_INSTALL_DIR}
   )
+endif()
+if(TARGET std_msgs_generate_messages_py)
+  add_dependencies(control_pkg_generate_messages_py std_msgs_generate_messages_py)
 endif()

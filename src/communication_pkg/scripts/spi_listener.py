@@ -8,16 +8,32 @@ spi.open(0,0)
 spi.max_speed_hz= 50000
 spi.mode = 0
 
+
 def callback(data):
     global spi
-    #rospy.loginfo(rospy.get_caller_id() + 'Velocity is: %s', data.v)
-   
-    vHex = int(hex(int(data.v)), 16)
+    vSign= 0
+    wSign= 0
+    vHex= data.v
+    wHex= data.w
+
+    if vHex < 0:
+       vHex = -vHex
+       vSign = 1
+
+    if wHex < 0:
+        wHex = -wHex
+        wSign = 1 
+        
+    rospy.loginfo(vHex)
+    rospy.loginfo(wHex)
+
+    vHex= int(hex(int(vHex)), 16)
+    wHex= int(hex(int(wHex)), 16)
+
     resp = spi.xfer([vHex])
-    resp = spi.xfer([0x00])
-    wHex = int(hex(int(data.w)), 16)
+    resp = spi.xfer([vSign])
     resp = spi.xfer([wHex])
-    resp = spi.xfer([0x00])
+    resp = spi.xfer([wSign])
 
 
 def listener():
