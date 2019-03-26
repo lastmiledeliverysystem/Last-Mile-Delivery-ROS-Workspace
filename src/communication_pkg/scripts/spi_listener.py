@@ -1,21 +1,22 @@
 #!/usr/bin/python3.5
 import rospy
 from control_pkg.msg import Diff_drive
-import spidev
+import serial
+import struct
 
-spi = spidev.SpiDev()
-spi.open(0,0)
-spi.max_speed_hz= 50000
-spi.mode = 0
+ser = serial.Serial('/dev/ttyACM0',9600)
 
 
 def callback(data):
-    global spi
+    dataToSend=[]
     vSign= 0
     wSign= 0
     vHex= data.v
     wHex= data.w
 
+    rospy.loginfo(vHex)
+    rospy.loginfo(wHex)
+    
     if vHex < 0:
        vHex = -vHex
        vSign = 1
@@ -23,17 +24,16 @@ def callback(data):
     if wHex < 0:
         wHex = -wHex
         wSign = 1 
-        
-    rospy.loginfo(vHex)
-    rospy.loginfo(wHex)
 
-    vHex= int(hex(int(vHex)), 16)
-    wHex= int(hex(int(wHex)), 16)
+    dataToSend.append(int(vHex))
+    dataToSend.append(int(vSign))
+    dataToSend.append(int(wHex))
+    dataToSend.append(int(wSign))
+  
+    
 
-    resp = spi.xfer([vHex])
-    resp = spi.xfer([vSign])
-    resp = spi.xfer([wHex])
-    resp = spi.xfer([wSign])
+    for item in dataToSend:
+        ser.write(struct.pack('>B',item))
 
 
 def listener():

@@ -8,7 +8,7 @@ import std_msgs.msg
 
 
 def camera_capture():   
-    video = cv2.VideoCapture(0)
+    video = cv2.VideoCapture(1)
     video.set(3,800) #horizontal pixels
     video.set(4,600) ##vertical pixels
    
